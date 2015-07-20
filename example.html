@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/JSON2Table.js" charset="UTF-8"></script>
+</head>
+<body>
+<div id="table"></div>
+
+<script>
+    var resultSet = [
+        {
+            id: 1,
+            name: "홍길동",
+            jobs: "도사",
+            skills: "동에번쩍서에번쩍"
+        },
+        {
+            id: 2,
+            name: "전우치",
+            jobs: "도사",
+            skills: "임금놀려먹기"
+        },
+        {
+            id: 2,
+            name: "손오공",
+            jobs: "요괴",
+            skills: "군두운"
+        }
+    ];
+
+    JSON2Table('table', resultSet, 'json', {id:'test'});
+</script>
+</body>
+</html>
